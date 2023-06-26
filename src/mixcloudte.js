@@ -257,6 +257,7 @@ getTrackList = function () {
             var raperelaydata = JSON.parse(o.responseText)
             if (raperelaydata && raperelaydata.data.cloudcast.sections) {
                 all_tracks = raperelaydata.data.cloudcast.sections;
+		console.log(all_tracks);
                 insertMTEButton(formatTracks(all_tracks));
                 getTrackDivs();
             }
