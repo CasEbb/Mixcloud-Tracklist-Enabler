@@ -237,7 +237,7 @@ setTrackDivs = function (len) {
     };
     var match = document.cookie.match(new RegExp('(^| )csrftoken=([^;]+)'));
     match = match ? match[2] : '';
-    o.open("POST", 'https://www.mixcloud.com/graphql', !0);
+    o.open("POST", 'https://app.mixcloud.com/graphql', !0);
     o.setRequestHeader('content-type', 'application/json');
     o.setRequestHeader('accept', 'application/json');
     o.setRequestHeader("x-csrftoken", match);
@@ -266,7 +266,7 @@ getTrackList = function () {
     };
     var match = document.cookie.match(new RegExp('(^| )csrftoken=([^;]+)'));
     match = match ? match[2] : '';
-    o.open("POST", 'https://www.mixcloud.com/graphql', !0);
+    o.open("POST", 'https://app.mixcloud.com/graphql', !0);
     o.setRequestHeader('content-type', 'application/json');
     o.setRequestHeader('accept', 'application/json');
     o.setRequestHeader("x-csrftoken", match);
@@ -294,7 +294,7 @@ getTrackId = function () {
     };
     var match = document.cookie.match(new RegExp('(^| )csrftoken=([^;]+)'));
     match = match ? match[2] : '';
-    o.open("POST", 'https://www.mixcloud.com/graphql', !0);
+    o.open("POST", 'https://app.mixcloud.com/graphql', !0);
     o.setRequestHeader('content-type', 'application/json');
     o.setRequestHeader('accept', 'application/json');
     o.setRequestHeader("x-csrftoken", match);
